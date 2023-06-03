@@ -1,0 +1,136 @@
+.try {
+  color: hsl(212, 21%, 14%);
+  color: hsl(228, 12%, 48%);
+  color: hsl(158, 36%, 37%);
+  color: hsl(30, 38%, 92%);
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  width: 550px;
+}
+
+.main-container img {
+  width: 250px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.left-side * {
+  margin: 0;
+  padding: 0;
+}
+
+.left-side {
+  font-family: "Montserrat", sans-serif;
+  padding: 25px;
+}
+
+.perfume {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-family: "Fraunces";
+  line-height: 30px;
+  color: hsl(212, 21%, 14%);
+  font-size: 28px;
+  width: 190px;
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.product-description {
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  width: 220px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-bottom: 20px;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 26px;
+}
+.cut-price {
+  padding-left: 31px;
+  padding-bottom: 10px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-size: 10px;
+  font-family: "montserrat";
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border-style: none;
+  color: hsl(30, 38%, 92%);
+  width: 100%;
+  font-family: "montserrat";
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.add-to-cart-button {
+  padding: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.add-to-cart-button:hover {
+  opacity: 90%;
+}
+
+button:active {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    flex-direction: column;
+    width: 90%;
+    border-radius: 15px;
+  }
+  .main-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0px 50%;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  h1 {
+    width: 300px;
+    font-size: 2.125em;
+    line-height: 32px;
+  }
+  .product-description {
+    width: 100%;
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
